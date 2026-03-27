@@ -1,6 +1,11 @@
 {% extends 'ui/base.html' %}
 {% block content %}
 <h2 class="mb-3">Новая версия шаблона: {{ template.name }}</h2>
+<div class="alert alert-info">
+  Поддерживаемый синтаксис плейсхолдеров: <code>[[person.full_name]]</code>, <code>[[format_date:person.hire_date:dd.MM.yyyy]]</code>,
+  <code>[[default:person.snils:не указано]]</code>, <code>[[if:person.is_active]]...[[endif]]</code>,
+  <code>[[table_start:person.education]]...[[table_end:person.education]]</code>.
+</div>
 <form method="post" enctype="multipart/form-data" class="card p-3">{% csrf_token %}
   {{ form.as_p }}
   <button class="btn btn-primary">Сохранить версию</button>

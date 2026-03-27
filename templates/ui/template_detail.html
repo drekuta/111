@@ -8,15 +8,50 @@
   <p><strong>Модуль:</strong> {{ item.get_module_display }}</p>
   <p><strong>Статус:</strong> {{ item.is_active|yesno:'Активен,Неактивен' }}</p>
 </div>
+
+<div class="card p-3 mb-3">
+  <h5>Доступные поля для {{ item.get_module_display }}</h5>
+  <div class="d-flex flex-wrap gap-2">
+    {% for f in available_fields %}
+      <span class="badge text-bg-light border">{{ f }}</span>
+    {% endfor %}
+  </div>
+</div>
+
 <div class="card p-3">
   <h5>Версии</h5>
-  <table class="table">
-    <thead><tr><th>Версия</th><th>Формат</th><th>Активна</th><th>Дата</th></tr></thead>
+  <table class="table table-sm align-middle">
+    <thead><tr><th>Версия</th><th>Формат</th><th>Активна</th><th>Плейсхолдеры</th><th>Дата</th></tr></thead>
     <tbody>
       {% for v in item.versions.all %}
-      <tr><td>{{ v.version }}</td><td>{{ v.file_format }}</td><td>{{ v.is_active|yesno:'Да,Нет' }}</td><td>{{ v.created_at }}</td></tr>
+      <tr>
+        <td>{{ v.version }}</td>
+        <td>{{ v.file_format }}</td>
+        <td>{{ v.is_active|yesno:'Да,Нет' }}</td>
+        <td>
+          {% if v.placeholder_schema.placeholders %}
+            <details>
+              <summary>Всего: {{ v.placeholder_schema.placeholders|length }}</summary>
+              <div class="mt-2">
+                <div><strong>Распознано:</strong> {{ v.placeholder_schema.recognized|length }}</div>
+                <div><strong>Неизвестно:</strong> {{ v.placeholder_schema.unknown|length }}</div>
+                <div><strong>Ошибки синтаксиса:</strong> {{ v.placeholder_schema.syntax_errors|length }}</div>
+              </div>
+              {% if v.placeholder_schema.unknown %}
+                <div class="mt-2 text-danger"><strong>Неизвестные:</strong> {{ v.placeholder_schema.unknown|join:', ' }}</div>
+              {% endif %}
+              {% if v.placeholder_schema.syntax_errors %}
+                <div class="mt-2 text-danger"><strong>Ошибки:</strong> {{ v.placeholder_schema.syntax_errors|join:', ' }}</div>
+              {% endif %}
+            </details>
+          {% else %}
+            —
+          {% endif %}
+        </td>
+        <td>{{ v.created_at }}</td>
+      </tr>
       {% empty %}
-      <tr><td colspan="4">Версий нет</td></tr>
+      <tr><td colspan="5">Версий нет</td></tr>
       {% endfor %}
     </tbody>
   </table>
