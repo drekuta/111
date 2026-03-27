@@ -48,6 +48,7 @@ python -m PyInstaller ^
   --clean ^
   --name volopas_app ^
   --onefile ^
+  --additional-hooks-dir=pyinstaller_hooks ^
   --collect-all docxtpl ^
   --hidden-import=config.settings ^
   --hidden-import=config.urls ^
