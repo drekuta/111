@@ -45,6 +45,11 @@ docker compose up --build
 3. Собирает `dist\volopas_app.exe`.
 
 Поведение `volopas_app.exe`:
+ codex/fix-pyinstaller-typeerror-in-django-build-0l6ylc
 - режим сервера (по умолчанию): `volopas_app.exe` или `volopas_app.exe server [host:port]`;
 - режим команд Django: `volopas_app.exe manage <команда>` (например, `volopas_app.exe manage migrate`);
 - для совместимости также поддержан прямой вызов команд без `manage` (например, `volopas_app.exe migrate`).
+=======
+- без аргументов: запускает сервер `http://127.0.0.1:8000`;
+- с аргументами: работает как `manage.py` (например, `volopas_app.exe migrate`).
+ main
