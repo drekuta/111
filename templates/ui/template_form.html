@@ -1,0 +1,8 @@
+{% extends 'ui/base.html' %}
+{% block content %}
+<h2 class="mb-3">{{ title }}</h2>
+<form method="post" class="card p-3">{% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn btn-primary">Сохранить</button>
+</form>
+{% endblock %}

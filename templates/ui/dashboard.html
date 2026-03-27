@@ -1,0 +1,24 @@
+{% extends 'ui/base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h2>Главный дашборд</h2>
+</div>
+<div class="row g-3 mb-4">
+  <div class="col-md-4"><div class="card p-3"><small>Сотрудники</small><h3>{{ personnel_count }}</h3></div></div>
+  <div class="col-md-4"><div class="card p-3"><small>Недавние изменения</small><h3>{{ recent_personnel|length }}</h3></div></div>
+  <div class="col-md-4"><div class="card p-3"><small>Последние документы</small><h3>{{ recent_docs|length }}</h3></div></div>
+</div>
+<div class="card p-3">
+  <h5>Последние записи персонала</h5>
+  <table class="table table-hover align-middle">
+    <thead><tr><th>ФИО</th><th>Должность</th><th>Статус</th></tr></thead>
+    <tbody>
+    {% for item in recent_personnel %}
+      <tr><td><a href="/forms/personnel/{{ item.id }}/">{{ item.full_name }}</a></td><td>{{ item.position }}</td><td>{{ item.status }}</td></tr>
+    {% empty %}
+      <tr><td colspan="3">Пока нет данных</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
