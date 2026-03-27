@@ -43,3 +43,8 @@ docker compose up --build
 1. Устанавливает переменные окружения для БД.
 2. Проверяет наличие `PyInstaller` (и устанавливает, если его нет).
 3. Собирает `dist\volopas_app.exe`.
+
+Поведение `volopas_app.exe`:
+- режим сервера (по умолчанию): `volopas_app.exe` или `volopas_app.exe server [host:port]`;
+- режим команд Django: `volopas_app.exe manage <команда>` (например, `volopas_app.exe manage migrate`);
+- для совместимости также поддержан прямой вызов команд без `manage` (например, `volopas_app.exe migrate`).
