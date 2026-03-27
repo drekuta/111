@@ -52,15 +52,8 @@ python -m PyInstaller ^
   --collect-all docxtpl ^
   --hidden-import=config.settings ^
   --hidden-import=config.urls ^
- codex/fix-pyinstaller-typeerror-in-django-build-0l6ylc
-  launcher.py
-=======
- codex/fix-pyinstaller-typeerror-in-django-build-kwnrm7
-  launcher.py
-=======
-  manage.py
- main
- main
+  launcher.py ^
+  manage.py >>"%LOG_FILE%" 2>&1
 
 if errorlevel 1 (
     echo [ОШИБКА] Сборка завершилась с ошибкой. Смотрите %LOG_FILE%.
