@@ -6,15 +6,16 @@ binaries = []
 hiddenimports = []
 tmp_ret = collect_all('docxtpl')
 datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
+hiddenimports += ['config.settings', 'config.urls']
 
 
 a = Analysis(
-    ['manage.py'],
+    ['launcher.py'],
     pathex=[],
     binaries=binaries,
     datas=datas,
     hiddenimports=hiddenimports,
-    hookspath=[],
+    hookspath=['pyinstaller_hooks'],
     hooksconfig={},
     runtime_hooks=[],
     excludes=[],
