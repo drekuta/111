@@ -52,10 +52,14 @@ python -m PyInstaller ^
   --collect-all docxtpl ^
   --hidden-import=config.settings ^
   --hidden-import=config.urls ^
+ codex/fix-pyinstaller-typeerror-in-django-build-0l6ylc
+  launcher.py
+=======
  codex/fix-pyinstaller-typeerror-in-django-build-kwnrm7
   launcher.py
 =======
   manage.py
+ main
  main
 
 if errorlevel 1 (
