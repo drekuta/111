@@ -25,3 +25,21 @@ docker compose up --build
 - Django REST Framework
 - PostgreSQL 16
 - docxtpl
+
+## Подключение к БД (по умолчанию)
+В `config/settings.py` установлены значения по умолчанию:
+- `DB_HOST=192.168.1.65`
+- `DB_PORT=5432`
+- `DB_NAME=my_new_db`
+- `DB_USER=admin`
+- `DB_PASSWORD=<558955>`
+
+При необходимости их можно переопределить через переменные окружения.
+
+## Сборка EXE (Windows)
+Добавлен `build_exe.bat` в корне проекта.
+
+Он:
+1. Устанавливает переменные окружения для БД.
+2. Проверяет наличие `PyInstaller` (и устанавливает, если его нет).
+3. Собирает `dist\volopas_app.exe`.

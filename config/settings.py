@@ -46,10 +46,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'volopas'),
-        'USER': os.getenv('DB_USER', 'volopas'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'volopas'),
-        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'NAME': os.getenv('DB_NAME', 'my_new_db'),
+        'USER': os.getenv('DB_USER', 'admin'),
+        'PASSWORD': os.getenv('DB_PASSWORD', '<558955>'),
+        'HOST': os.getenv('DB_HOST', '192.168.1.65'),
         'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
