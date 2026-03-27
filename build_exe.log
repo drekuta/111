@@ -4,4 +4,48 @@ Python 3.13.12
 [3/5] Проверка PyInstaller...
 6.16.0
 [4/5] Сборка EXE...
+337 INFO: PyInstaller: 6.16.0, contrib hooks: 2026.0
+337 INFO: Python: 3.13.12
+380 INFO: Platform: Windows-10-10.0.19045-SP0
+380 INFO: Python environment: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0
+381 INFO: wrote C:\Users\User\Desktop\123532\���\111\volopas_app.spec
+384 INFO: Removing temporary files and cleaning cache in C:\Users\User\AppData\Local\pyinstaller
+388 WARNING: collect_data_files - skipping data collection for module 'docxtpl' as it is not a package.
+390 WARNING: collect_dynamic_libs - skipping library collection for module 'docxtpl' as it is not a package.
+2515 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\User\\Desktop\\123532\\���\\111',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\\python313.zip',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\\DLLs',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\\Lib',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0',
+ 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\\Lib\\site-packages',
+ 'C:\\Users\\User\\Desktop\\123532\\���\\111',
+ 'C:\\Users\\User\\Desktop\\123532\\���\\111']
+3275 INFO: checking Analysis
+3275 INFO: Building Analysis because Analysis-00.toc is non existent
+3275 INFO: Looking for Python shared library...
+3275 INFO: Using Python shared library: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\python313.dll
+3275 INFO: Running Analysis Analysis-00.toc
+3275 INFO: Target bytecode optimization level: 0
+3275 INFO: Initializing module dependency graph...
+3278 INFO: Initializing module graph hook caches...
+3301 INFO: Analyzing modules for base_library.zip ...
+5685 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+6935 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+8617 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+10573 INFO: Caching module dependency graph...
+10625 INFO: Analyzing C:\Users\User\Desktop\123532\���\111\launcher.py
+
+Syntax error in C:\Users\User\Desktop\123532\���\111\launcher.py
+    co_ast = compile(contents, pathname, 'exec', ast.PyCF_ONLY_AST, True)
+   File "C:\Users\User\Desktop\123532\���\111\launcher.py", line 4
+     codex/fix-pyinstaller-typeerror-in-django-build-0l6ylc
+ IndentationError: unexpected indent
+
 [ОШИБКА] Сборка завершилась с ошибкой.

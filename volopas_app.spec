@@ -6,11 +6,10 @@ binaries = []
 hiddenimports = ['config.settings', 'config.urls']
 tmp_ret = collect_all('docxtpl')
 datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
-hiddenimports += ['config.settings', 'config.urls']
 
 
 a = Analysis(
-    ['launcher.py'],
+    ['launcher.py', 'manage.py'],
     pathex=[],
     binaries=binaries,
     datas=datas,
