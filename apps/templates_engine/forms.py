@@ -1,4 +1,5 @@
 from django import forms
+
 from .models import Template, TemplateVersion
 
 
@@ -11,4 +12,4 @@ class TemplateForm(forms.ModelForm):
 class TemplateVersionForm(forms.ModelForm):
     class Meta:
         model = TemplateVersion
-        fields = ['version', 'file', 'file_format', 'placeholder_schema', 'is_active']
+        fields = ['version', 'file', 'file_format', 'is_active']

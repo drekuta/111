@@ -1,6 +1,9 @@
+from django.contrib import messages
 from django.shortcuts import get_object_or_404, redirect, render
+
 from .forms import TemplateForm, TemplateVersionForm
 from .models import Template
+from .placeholders import FORM_FIELD_CATALOG, SYSTEM_FIELDS, analyze_placeholders
 
 
 def template_list(request):
@@ -21,7 +24,15 @@ def template_create(request):
 
 def template_detail(request, pk: int):
     obj = get_object_or_404(Template, pk=pk)
-    return render(request, 'ui/template_detail.html', {'item': obj})
+    available_fields = sorted(FORM_FIELD_CATALOG.get(obj.module, set()) | SYSTEM_FIELDS)
+    return render(
+        request,
+        'ui/template_detail.html',
+        {
+            'item': obj,
+            'available_fields': available_fields,
+        },
+    )
 
 
 def template_version_create(request, pk: int):
@@ -31,7 +42,22 @@ def template_version_create(request, pk: int):
         if form.is_valid():
             obj = form.save(commit=False)
             obj.template = tmpl
+            analysis = analyze_placeholders(obj.file, tmpl.module)
+            obj.placeholder_schema = {
+                'placeholders': analysis.placeholders,
+                'recognized': analysis.recognized,
+                'unknown': analysis.unknown,
+                'syntax_errors': analysis.syntax_errors,
+            }
             obj.save()
+
+            if analysis.unknown or analysis.syntax_errors:
+                messages.warning(
+                    request,
+                    'Версия сохранена с предупреждениями: есть неизвестные плейсмаркеры или ошибки синтаксиса.',
+                )
+            else:
+                messages.success(request, 'Версия шаблона успешно сохранена и проверена.')
             return redirect('template_detail', pk=tmpl.pk)
     else:
         form = TemplateVersionForm()
