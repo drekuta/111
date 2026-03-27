@@ -1,0 +1,24 @@
+{% extends 'ui/base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>Реестр шаблонов</h2>
+  <a class="btn btn-primary" href="/templates-registry/new/">+ Новый шаблон</a>
+</div>
+<div class="card p-2">
+  <table class="table table-hover mb-0">
+    <thead><tr><th>Название</th><th>Модуль</th><th>Активен</th><th>Версии</th></tr></thead>
+    <tbody>
+    {% for item in items %}
+      <tr>
+        <td><a href="/templates-registry/{{ item.id }}/">{{ item.name }}</a></td>
+        <td>{{ item.get_module_display }}</td>
+        <td>{{ item.is_active|yesno:'Да,Нет' }}</td>
+        <td>{{ item.versions.count }}</td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="4">Шаблонов пока нет</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

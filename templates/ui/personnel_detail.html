@@ -1,0 +1,18 @@
+{% extends 'ui/base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>{{ item.full_name }}</h2>
+  <a class="btn btn-success" href="/docgen/personnel/{{ item.id }}/generate/">Сформировать печатную форму</a>
+</div>
+<div class="card p-3">
+  <div class="row g-3">
+    <div class="col-md-6"><strong>Должность:</strong> {{ item.position }}</div>
+    <div class="col-md-6"><strong>Статус:</strong> {{ item.status }}</div>
+    <div class="col-md-6"><strong>Идентификатор:</strong> {{ item.identifier }}</div>
+    <div class="col-md-6"><strong>Вид занятости:</strong> {{ item.employment_type }}</div>
+    <div class="col-12"><strong>Функции:</strong><br>{{ item.functions|linebreaksbr }}</div>
+    <div class="col-12"><strong>Образование:</strong><br>{{ item.education|linebreaksbr }}</div>
+    <div class="col-12"><strong>Примечание:</strong><br>{{ item.note|linebreaksbr }}</div>
+  </div>
+</div>
+{% endblock %}

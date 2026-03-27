@@ -1,0 +1,24 @@
+{% extends 'ui/base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>{{ item.name }}</h2>
+  <a class="btn btn-primary" href="/templates-registry/{{ item.id }}/versions/new/">+ Добавить версию</a>
+</div>
+<div class="card p-3 mb-3">
+  <p><strong>Модуль:</strong> {{ item.get_module_display }}</p>
+  <p><strong>Статус:</strong> {{ item.is_active|yesno:'Активен,Неактивен' }}</p>
+</div>
+<div class="card p-3">
+  <h5>Версии</h5>
+  <table class="table">
+    <thead><tr><th>Версия</th><th>Формат</th><th>Активна</th><th>Дата</th></tr></thead>
+    <tbody>
+      {% for v in item.versions.all %}
+      <tr><td>{{ v.version }}</td><td>{{ v.file_format }}</td><td>{{ v.is_active|yesno:'Да,Нет' }}</td><td>{{ v.created_at }}</td></tr>
+      {% empty %}
+      <tr><td colspan="4">Версий нет</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

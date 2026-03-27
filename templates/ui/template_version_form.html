@@ -1,0 +1,8 @@
+{% extends 'ui/base.html' %}
+{% block content %}
+<h2 class="mb-3">Новая версия шаблона: {{ template.name }}</h2>
+<form method="post" enctype="multipart/form-data" class="card p-3">{% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn btn-primary">Сохранить версию</button>
+</form>
+{% endblock %}
