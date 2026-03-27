@@ -16,6 +16,7 @@ set "DB_PORT=5432"
 set "DB_NAME=my_new_db"
 set "DB_USER=admin"
 set "DB_PASSWORD=<558955>"
+set "DJANGO_SETTINGS_MODULE=config.settings"
 
 echo [2/5] Проверка Python...
 echo [2/5] Проверка Python...>>"%LOG_FILE%"
@@ -47,7 +48,10 @@ python -m PyInstaller ^
   --clean ^
   --name volopas_app ^
   --onefile ^
+  --additional-hooks-dir=pyinstaller_hooks ^
   --collect-all docxtpl ^
+  --hidden-import=config.settings ^
+  --hidden-import=config.urls ^
   manage.py
 
 if errorlevel 1 (
