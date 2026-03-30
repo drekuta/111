@@ -11,11 +11,11 @@ if exist "%LOG_FILE%" del "%LOG_FILE%"
 
 echo [1/5] Настройка переменных подключения к БД...
 echo [1/5] Настройка переменных подключения к БД...>>"%LOG_FILE%"
-set "DB_HOST=192.168.1.65"
-set "DB_PORT=5432"
-set "DB_NAME=my_new_db"
-set "DB_USER=admin"
-set "DB_PASSWORD=<558955>"
+set "DB_HOST=127.0.0.1"
+set "DB_PORT=5433"
+set "DB_NAME=volopas_smk"
+set "DB_USER=postgres"
+set "DB_PASSWORD=558955"
 set "DJANGO_SETTINGS_MODULE=config.settings"
 
 echo [2/5] Проверка Python...
