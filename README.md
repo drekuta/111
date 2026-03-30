@@ -28,13 +28,13 @@ docker compose up --build
 
 ## Подключение к БД (по умолчанию)
 В `config/settings.py` установлены значения по умолчанию:
-- `DB_HOST=192.168.1.65`
-- `DB_PORT=5432`
-- `DB_NAME=my_new_db`
-- `DB_USER=admin`
-- `DB_PASSWORD=<558955>`
+- `DB_HOST=127.0.0.1`
+- `DB_PORT=5433`
+- `DB_NAME=volopas_smk`
+- `DB_USER=postgres`
+- `DB_PASSWORD=558955`
 
-При необходимости их можно переопределить через переменные окружения.
+При необходимости их можно переопределить через переменные окружения. Также для совместимости поддерживаются `USER` и `PASSWORD` как альтернативы `DB_USER` и `DB_PASSWORD`.
 
 ## Сборка EXE (Windows)
 Добавлен `build_exe.bat` в корне проекта.
