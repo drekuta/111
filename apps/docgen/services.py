@@ -1,8 +1,17 @@
 from pathlib import Path
 from django.core.files.base import File
-from docxtpl import DocxTemplate
 from apps.forms_registry.models import Personnel
 from apps.templates_engine.models import GeneratedDocument, TemplateVersion
+
+
+def _get_docxtpl():
+    try:
+        from docxtpl import DocxTemplate
+    except ModuleNotFoundError as exc:
+        raise RuntimeError(
+            "Пакет 'docxtpl' не установлен. Установите зависимости из requirements.txt."
+        ) from exc
+    return DocxTemplate
 
 
 def build_personnel_context(person: Personnel) -> dict:
@@ -27,8 +36,9 @@ def build_personnel_context(person: Personnel) -> dict:
 def generate_form1_docx(personnel_id: int, template_version_id: int, generated_by: str = '') -> GeneratedDocument:
     person = Personnel.objects.get(pk=personnel_id)
     version = TemplateVersion.objects.get(pk=template_version_id, file_format='docx')
+    docx_template_class = _get_docxtpl()
 
-    tpl = DocxTemplate(version.file.path)
+    tpl = docx_template_class(version.file.path)
     context = build_personnel_context(person)
     tpl.render(context)
 

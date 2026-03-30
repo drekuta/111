@@ -17,6 +17,11 @@ def generate_personnel_form(request, pk: int):
         messages.error(request, 'Нет активного DOCX-шаблона для Формы 1.')
         return redirect('personnel_detail', pk=person.pk)
 
-    generate_form1_docx(person.id, version.id, generated_by=str(request.user) if request.user.is_authenticated else '')
+    try:
+        generate_form1_docx(person.id, version.id, generated_by=str(request.user) if request.user.is_authenticated else '')
+    except RuntimeError as exc:
+        messages.error(request, str(exc))
+        return redirect('personnel_detail', pk=person.pk)
+
     messages.success(request, 'Печатная форма успешно сформирована и помещена в архив.')
     return redirect('personnel_detail', pk=person.pk)
