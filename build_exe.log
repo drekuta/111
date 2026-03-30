@@ -4,15 +4,15 @@ Python 3.13.12
 [3/5] ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° PyInstaller...
 6.16.0
 [4/5] Ð¡Ð±Ð¾Ñ€ÐºÐ° EXE...
-293 INFO: PyInstaller: 6.16.0, contrib hooks: 2026.0
-293 INFO: Python: 3.13.12
-330 INFO: Platform: Windows-10-10.0.19045-SP0
-330 INFO: Python environment: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0
-332 INFO: wrote C:\Users\User\Desktop\123532\ñìê\111\volopas_app.spec
-334 INFO: Removing temporary files and cleaning cache in C:\Users\User\AppData\Local\pyinstaller
-350 WARNING: collect_data_files - skipping data collection for module 'docxtpl' as it is not a package.
-351 WARNING: collect_dynamic_libs - skipping library collection for module 'docxtpl' as it is not a package.
-2923 INFO: Module search paths (PYTHONPATH):
+303 INFO: PyInstaller: 6.16.0, contrib hooks: 2026.0
+304 INFO: Python: 3.13.12
+341 INFO: Platform: Windows-10-10.0.19045-SP0
+341 INFO: Python environment: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0
+343 INFO: wrote C:\Users\User\Desktop\123532\ñìê\111\volopas_app.spec
+345 INFO: Removing temporary files and cleaning cache in C:\Users\User\AppData\Local\pyinstaller
+360 WARNING: collect_data_files - skipping data collection for module 'docxtpl' as it is not a package.
+362 WARNING: collect_dynamic_libs - skipping library collection for module 'docxtpl' as it is not a package.
+4713 INFO: Module search paths (PYTHONPATH):
 ['C:\\Users\\User\\Desktop\\123532\\ñìê\\111',
  'C:\\Program '
  'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\\python313.zip',
@@ -27,113 +27,113 @@ Python 3.13.12
  'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\\Lib\\site-packages',
  'C:\\Users\\User\\Desktop\\123532\\ñìê\\111',
  'C:\\Users\\User\\Desktop\\123532\\ñìê\\111']
-3797 INFO: checking Analysis
-3798 INFO: Building Analysis because Analysis-00.toc is non existent
-3798 INFO: Looking for Python shared library...
-3798 INFO: Using Python shared library: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\python313.dll
-3798 INFO: Running Analysis Analysis-00.toc
-3798 INFO: Target bytecode optimization level: 0
-3798 INFO: Initializing module dependency graph...
-3801 INFO: Initializing module graph hook caches...
-3825 INFO: Analyzing modules for base_library.zip ...
-6331 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-9833 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-11316 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-12215 INFO: Caching module dependency graph...
-12276 INFO: Analyzing C:\Users\User\Desktop\123532\ñìê\111\launcher.py
-12386 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-12394 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-12448 INFO: Processing standard module hook 'hook-django.py' from 'C:\\Users\\User\\Desktop\\123532\\ñìê\\111\\pyinstaller_hooks'
-1313 WARNING: Failed to collect submodules for 'django.contrib.gis.utils' because importing 'django.contrib.gis.utils' raised: django.core.exceptions.ImproperlyConfigured: Could not find the GDAL library (tried "gdal307", "gdal306", "gdal305", "gdal304", "gdal303", "gdal302", "gdal301", "gdal300", "gdal204"). Is GDAL installed? If it is, try setting GDAL_LIBRARY_PATH in your settings.
-33044 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-33325 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-34495 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-34496 INFO: SetuptoolsInfo: initializing cached setuptools info...
-35884 INFO: Processing standard module hook 'hook-zoneinfo.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
-36206 INFO: Processing standard module hook 'hook-django.db.backends.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-36818 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-37332 INFO: Processing standard module hook 'hook-django.core.cache.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-38650 INFO: Processing standard module hook 'hook-django.core.mail.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-38708 INFO: Processing standard module hook 'hook-django.core.management.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-40162 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-42293 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-42465 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-43227 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-47530 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
-48406 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-48814 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-49592 INFO: Analyzing C:\Users\User\Desktop\123532\ñìê\111\manage.py
-49594 INFO: Analyzing hidden import 'config.settings'
-49598 INFO: Analyzing hidden import 'config.urls'
-50496 INFO: Processing module hooks (post-graph stage)...
-51064 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-52641 INFO: Processing standard module hook 'hook-django.db.backends.mysql.base.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-52949 INFO: Processing standard module hook 'hook-django.db.backends.oracle.base.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-53334 INFO: Processing standard module hook 'hook-psycopg_binary.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
-54424 INFO: Processing standard module hook 'hook-psycopg2.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
-54733 INFO: Processing standard module hook 'hook-sqlite3.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-56270 INFO: Processing standard module hook 'hook-django.contrib.sessions.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-57755 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-57755 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
-57769 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-57791 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-57849 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-57849 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
-57871 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-57871 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
-58248 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-58492 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-58493 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
-58510 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-58513 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-58515 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-58516 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
-59134 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-59134 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
-59972 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-59973 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
-60301 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-60343 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
-60343 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
-62433 INFO: Processing standard module hook 'hook-django.template.loaders.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-64854 WARNING: Hidden import "mx.DateTime" not found!
-64877 WARNING: Hidden import "django.db.backends.oracle.compiler" not found!
-64879 WARNING: Hidden import "django.db.backends.__pycache__.base" not found!
-65315 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
-65962 INFO: Processing standard module hook 'hook-tzdata.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
-67369 INFO: Performing binary vs. data reclassification (4539 entries)
-68524 INFO: Looking for ctypes DLLs
-68733 INFO: Analyzing run-time hooks ...
-68742 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
-68748 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
-68752 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
-68755 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
-68758 INFO: Including run-time hook 'pyi_rth_django.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
-68917 INFO: Creating base_library.zip...
-68948 INFO: Looking for dynamic libraries
-71512 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\numpy.libs', 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\psycopg_binary.libs', 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\psycopg_binary.libs', 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\psycopg2_binary.libs']
-71513 INFO: Extra DLL search directories (PATH): []
-73559 INFO: Warnings written to C:\Users\User\Desktop\123532\ñìê\111\build\volopas_app\warn-volopas_app.txt
-73759 INFO: Graph cross-reference written to C:\Users\User\Desktop\123532\ñìê\111\build\volopas_app\xref-volopas_app.html
-74019 INFO: checking PYZ
-74019 INFO: Building PYZ because PYZ-00.toc is non existent
-74019 INFO: Building PYZ (ZlibArchive) C:\Users\User\Desktop\123532\ñìê\111\build\volopas_app\PYZ-00.pyz
-75975 INFO: Building PYZ (ZlibArchive) C:\Users\User\Desktop\123532\ñìê\111\build\volopas_app\PYZ-00.pyz completed successfully.
-76255 INFO: checking PKG
-76256 INFO: Building PKG because PKG-00.toc is non existent
-76256 INFO: Building PKG (CArchive) volopas_app.pkg
-94123 INFO: Building PKG (CArchive) volopas_app.pkg completed successfully.
-94291 INFO: Bootloader C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
-94291 INFO: checking EXE
-94292 INFO: Building EXE because EXE-00.toc is non existent
-94292 INFO: Building EXE from EXE-00.toc
-94298 INFO: Copying bootloader EXE to C:\Users\User\Desktop\123532\ñìê\111\dist\volopas_app.exe
-94326 INFO: Copying icon to EXE
-94346 INFO: Copying 0 resources to EXE
-94346 INFO: Embedding manifest in EXE
-94365 INFO: Appending PKG archive to EXE
-94430 INFO: Fixing EXE headers
-95953 INFO: Building EXE from EXE-00.toc completed successfully.
-96122 INFO: Build complete! The results are available in: C:\Users\User\Desktop\123532\ñìê\111\dist
+6234 INFO: checking Analysis
+6234 INFO: Building Analysis because Analysis-00.toc is non existent
+6234 INFO: Looking for Python shared library...
+6234 INFO: Using Python shared library: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\python313.dll
+6235 INFO: Running Analysis Analysis-00.toc
+6235 INFO: Target bytecode optimization level: 0
+6235 INFO: Initializing module dependency graph...
+6240 INFO: Initializing module graph hook caches...
+6355 INFO: Analyzing modules for base_library.zip ...
+9382 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+12859 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+14920 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+15752 INFO: Caching module dependency graph...
+15812 INFO: Analyzing C:\Users\User\Desktop\123532\ñìê\111\launcher.py
+15940 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+15950 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+16019 INFO: Processing standard module hook 'hook-django.py' from 'C:\\Users\\User\\Desktop\\123532\\ñìê\\111\\pyinstaller_hooks'
+1665 WARNING: Failed to collect submodules for 'django.contrib.gis.utils' because importing 'django.contrib.gis.utils' raised: django.core.exceptions.ImproperlyConfigured: Could not find the GDAL library (tried "gdal307", "gdal306", "gdal305", "gdal304", "gdal303", "gdal302", "gdal301", "gdal300", "gdal204"). Is GDAL installed? If it is, try setting GDAL_LIBRARY_PATH in your settings.
+39144 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+39499 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+40844 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+40847 INFO: SetuptoolsInfo: initializing cached setuptools info...
+42481 INFO: Processing standard module hook 'hook-zoneinfo.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+42846 INFO: Processing standard module hook 'hook-django.db.backends.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+43531 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+44079 INFO: Processing standard module hook 'hook-django.core.cache.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+45865 INFO: Processing standard module hook 'hook-django.core.mail.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+45930 INFO: Processing standard module hook 'hook-django.core.management.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+47997 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+50178 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+50366 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+51165 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+55279 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+55982 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+56366 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+57235 INFO: Analyzing C:\Users\User\Desktop\123532\ñìê\111\manage.py
+57238 INFO: Analyzing hidden import 'config.settings'
+57243 INFO: Analyzing hidden import 'config.urls'
+58011 INFO: Processing module hooks (post-graph stage)...
+58598 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+60168 INFO: Processing standard module hook 'hook-django.db.backends.mysql.base.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+60496 INFO: Processing standard module hook 'hook-django.db.backends.oracle.base.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+60916 INFO: Processing standard module hook 'hook-psycopg_binary.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+61790 INFO: Processing standard module hook 'hook-psycopg2.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+62112 INFO: Processing standard module hook 'hook-sqlite3.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+63549 INFO: Processing standard module hook 'hook-django.contrib.sessions.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+64827 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+64828 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+64846 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+64868 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+64928 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+64928 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+64951 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+64951 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+65313 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+65567 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+65568 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+65585 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+65589 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+65592 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+65592 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+66096 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+66096 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+66915 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+66915 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+67245 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+67292 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+67292 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+69305 INFO: Processing standard module hook 'hook-django.template.loaders.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+71725 WARNING: Hidden import "mx.DateTime" not found!
+71750 WARNING: Hidden import "django.db.backends.oracle.compiler" not found!
+71752 WARNING: Hidden import "django.db.backends.__pycache__.base" not found!
+72250 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks'
+73003 INFO: Processing standard module hook 'hook-tzdata.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+74521 INFO: Performing binary vs. data reclassification (4539 entries)
+76984 INFO: Looking for ctypes DLLs
+77327 INFO: Analyzing run-time hooks ...
+77334 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
+77340 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
+77345 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
+77348 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
+77351 INFO: Including run-time hook 'pyi_rth_django.py' from 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
+77549 INFO: Creating base_library.zip...
+77582 INFO: Looking for dynamic libraries
+80481 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\numpy.libs', 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\psycopg_binary.libs', 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\psycopg_binary.libs', 'C:\\Users\\User\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\psycopg2_binary.libs']
+80481 INFO: Extra DLL search directories (PATH): []
+82543 INFO: Warnings written to C:\Users\User\Desktop\123532\ñìê\111\build\volopas_app\warn-volopas_app.txt
+82760 INFO: Graph cross-reference written to C:\Users\User\Desktop\123532\ñìê\111\build\volopas_app\xref-volopas_app.html
+83066 INFO: checking PYZ
+83066 INFO: Building PYZ because PYZ-00.toc is non existent
+83066 INFO: Building PYZ (ZlibArchive) C:\Users\User\Desktop\123532\ñìê\111\build\volopas_app\PYZ-00.pyz
+85242 INFO: Building PYZ (ZlibArchive) C:\Users\User\Desktop\123532\ñìê\111\build\volopas_app\PYZ-00.pyz completed successfully.
+85422 INFO: checking PKG
+85423 INFO: Building PKG because PKG-00.toc is non existent
+85423 INFO: Building PKG (CArchive) volopas_app.pkg
+103249 INFO: Building PKG (CArchive) volopas_app.pkg completed successfully.
+103411 INFO: Bootloader C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+103411 INFO: checking EXE
+103412 INFO: Building EXE because EXE-00.toc is non existent
+103412 INFO: Building EXE from EXE-00.toc
+103418 INFO: Copying bootloader EXE to C:\Users\User\Desktop\123532\ñìê\111\dist\volopas_app.exe
+103473 INFO: Copying icon to EXE
+103495 INFO: Copying 0 resources to EXE
+103496 INFO: Embedding manifest in EXE
+103602 INFO: Appending PKG archive to EXE
+103646 INFO: Fixing EXE headers
+106287 INFO: Building EXE from EXE-00.toc completed successfully.
+106448 INFO: Build complete! The results are available in: C:\Users\User\Desktop\123532\ñìê\111\dist
 [5/5] ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð°...
 [Ð£Ð¡ÐŸÐ•Ð¥] Ð“Ð¾Ñ‚Ð¾Ð²Ð¾. Ð¤Ð°Ð¹Ð» EXE: dist\volopas_app.exe
